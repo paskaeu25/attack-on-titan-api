@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attack On Titan API</title>
+  </head>
+  <body>
+    <h1>Attack On Titan API</h1>
+    <h2>URLs:</h2>
+    <ol>
+      <li>
+        <p>Base URL: [enter URL]</p>
+      </li>
+      <li>
+        <p>Get list of all characters: GET /api/characters</p>
+      </li>
+      <li>
+        <p>Get character by Id: GET /api/characters/{id}</p>
+      </li>
+      <li>
+        <p>Delete character: DELETE /api/characters/{id}</p>
+      </li>
+      <li>
+        <p>Create new character: POST /api/characters</p>
+        <ul>
+          <li>
+            <h4>Request Header:</h4>
+            <p>Content-Type: application/json</p>
+          </li>
+          <li>
+            <h4>Request Body:</h4>
+            {<br />
+
+            <span> "name": "Char name",</span><br />
+            <span> "affiliation": "affiliation name",</span><br />
+            <span> "titan": "name of titan",</span><br />
+            <span> "img": "url to image",</span><br />
+            <span> "gif": "url to gif"</span><br />
+            }
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Update character: PUT /api/characters/{id}</p>
+        <ul>
+          <li>
+            <h4>Request Header:</h4>
+            <p>Content-Type: application/json</p>
+          </li>
+          <li>
+            <h4>Request Body:</h4>
+            {<br />
+
+            <span> "name": "New Char name",</span><br />
+            <span> "affiliation": "New affiliation name",</span><br />
+            <span> "titan": "new name of titan",</span><br />
+            <span> "img": "new url to image",</span><br />
+            <span> "gif": "new url to gif"</span><br />
+            }
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
